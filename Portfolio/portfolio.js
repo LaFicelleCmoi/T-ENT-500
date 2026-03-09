@@ -4,35 +4,32 @@ document.addEventListener("DOMContentLoaded", function() {
   const sidenav = document.getElementById("mySidenav");
   const navLinks = document.querySelectorAll(".sidenav a[href^='#']");
 
+  if(openBtn) {
+    openBtn.onclick = function(e) {
+      e.preventDefault();
+      sidenav.classList.add("active");
+    };
+  }
 
-  openBtn.onclick = function() {
-    sidenav.classList.add("active");
-  };
+  if(closeBtn) {
+    closeBtn.onclick = function(e) {
+      e.preventDefault();
+      sidenav.classList.remove("active");
+    };
+  }
 
- 
-  closeBtn.onclick = function() {
-    sidenav.classList.remove("active");
-  };
-
-  
   navLinks.forEach(link => {
     link.addEventListener("click", function(e) {
-      
       e.preventDefault();
-
-      
       const targetId = this.getAttribute("href");
       const targetElement = document.querySelector(targetId);
-
       
       sidenav.classList.remove("active");
-
       
-      setTimeout(() => {
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 300); 
+      if (targetElement) {
+        // Défilement fluide
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
     });
   });
 });
