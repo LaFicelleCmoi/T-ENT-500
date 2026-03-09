@@ -1,0 +1,120 @@
+
+header {
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0 1rem;
+  line-height: 1.6;
+  font-size: 16px;
+  transition:  0.3s ease;
+ 
+}
+
+.formation-content {
+  position: relative;
+  z-index: 1;
+  font-size: large;
+  .li {
+    font-size: 9em;
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+
+}
+h4 {
+  font-size: 1.5em;
+  color:yellow;
+  
+}
+
+h5 {
+  font-size: 2em;
+  color:yellow;
+}
+
+
+
+p {
+  font-size: 1.4em;
+}
+
+li {
+  font-size: 1.4em;
+}
+
+.formation-link {
+  font-size: 1em;
+}
+
+.skills-list p {
+  font-size:  0.9em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+a {
+  font-size: 1.1em;
+}
+
+.formation-links {
+  color: rgb(255, 255, 255);
+}
+
+
+ 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  border-radius: 50px;
+}
+
+section:not(:last-child) {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  section:not(:last-child) {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+}
+
+a {
+  color: #ffffff;
+  font-size: medium;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #cc0055;
+}
+
+
+.font_formation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 10;
+}
