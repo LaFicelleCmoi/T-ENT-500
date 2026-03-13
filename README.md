@@ -1,18 +1,26 @@
-# Portfolio.V2 - Édition Game of Thrones (Flat Design)
+# 🏎️ Portfolio V2 - F1 Telemetry Edition
 
-Bienvenue sur le code source de mon portfolio numérique, conçu dans l'univers de Game of Thrones tout en respectant strictement les standards modernes du web.
+Bienvenue sur le code source de mon portfolio numérique. Cette nouvelle version offre une présentation moderne et professionnelle de mes compétences en développement, cybersécurité et électronique, totalement immergée dans l'univers de ma passion : la **Formule 1** et l'analyse de données (Télémétrie).
 
-## 🎯 Justification des choix UI/UX (Trophées : uiux_choicesKO & uiux_flatKO)
-- **Flat Design Strict :** Pour une lisibilité maximale et mettre le contenu au centre, j'ai supprimé toutes les ombres (`box-shadow`), dégradés et bordures arrondies. Les cartes ont des angles nets.
-- **Identité Visuelle (uiux_identityKO) :** - *Couleurs :* Gris Anthracite (Night's Watch) pour le fond, Rouge franc (Targaryen/Lannister) pour l'accentuation, et Blanc pour le contraste du texte.
-  - *Typographie :* 'Cinzel' (Serif) pour rappeler l'aspect épique/historique dans les titres, et 'Roboto' (Sans-Serif) pour garantir une lecture fluide des paragraphes longs.
-- **Frontend Tool (frontend_toolKO) :** J'ai intégré la librairie *Google Fonts* (import de polices) et la bibliothèque *FontAwesome* via CDN pour gérer efficacement l'affichage des icônes vectorielles sans alourdir le poids du site.
+## 🎯 Choix UI/UX & Flat Design (Trophées : uiux_choices & uiux_flat)
+- **Concept "Telemetry Dashboard" :** L'interface simule un écran de contrôle d'ingénieur de piste. J'ai opté pour un **Flat Design strict** : des cartes aux angles droits, des couleurs unies, sans ombres portées complexes, donnant la priorité absolue à la lisibilité des données.
+- **Identité Visuelle Cohérente :**
+  - *Couleurs :* Fond Carbone (`#15151e`), Rouge Ferrari pour l'accentuation (`#ff2800`), et un code couleur basé sur les gommes de pneus F1 (Rouge Soft, Jaune Medium, Blanc Hard, Vert Inter) pour jauger mes compétences.
+  - *Typographies :* `Share Tech Mono` pour les titres et les données (rappelant les terminaux informatiques) et `Titillium Web` pour garantir une lecture fluide et moderne du corps de texte.
 
-## 📱 Architecture et Organisation (organizationKO & responsivenessKO)
-- **Menu (menuKO) & Accroche (hookKO) :** Une navigation collante en haut de page permet d'accéder aux sections. Le Hero Header présente immédiatement ma photo, une phrase d'introduction claire et mes coordonnées de contact directes.
-- **Cohérence (consistencyKO) :** Mes compétences et projets sont directement liés aux secteurs visés (Cybersécurité, Développement Web, IoT).
-- **Responsive :** Le CSS utilise `CSS Grid` et `Flexbox` couplés à des media queries pour assurer un affichage parfait sur mobile, tablette et desktop.
+## 🛠️ Outils Front-End & Architecture (Trophées : frontend_tool & responsiveness)
+- **Technologies Standards :** Utilisation de **HTML5** pour la sémantique et de **CSS3** pour le design. 
+- **Outils & Bibliothèques :** - Intégration de **FontAwesome 6** via CDN pour l'iconographie vectorielle (optimisation du poids et netteté parfaite).
+  - Utilisation poussée des **Variables CSS (`:root`)** pour centraliser et maintenir la charte graphique de l'écurie.
+- **Accessibilité & Animations :** Utilisation de **JavaScript** (Vanilla) pour dynamiser l'apparition des jauges de compétences (Skill bars) et gérer une animation de feux de départ au chargement, améliorant l'UX sans surcharger le DOM.
+- **Réactivité (Responsive) :** L'affichage s'adapte parfaitement sur mobile, tablette et desktop grâce à l'utilisation combinée de `CSS Grid` et `Flexbox`.
 
-## 🚀 Déploiement et Versioning (onlineKO & versioning_basicsKO)
-- **Versioning :** Ce projet a été construit via Git avec des commits atomiques, fréquents et possédant des messages descriptifs clairs (ex: `feat: add hero section with contact details`, `style: apply flat design colors`).
-- **Déploiement en ligne :** Le site est hébergé publiquement via [GitHub Pages / Netlify / Vercel -> INSERER LE LIEN ICI] et accessible à tous les recruteurs.
+## 📁 Organisation & Concrétude (Trophées : organization & concreteness)
+- **Structure du projet :** La page principale (`index.html`) agit comme un "Pit Wall" (Mur des stands) centralisant l'accès aux sous-pages détaillées du dossier `/formation`.
+- **Réalisations :** Chaque projet technique (Python, IoT, Web) est listé avec son langage associé et un lien direct vers son code source, prouvant concrètement mes compétences.
+
+## 🚀 Déploiement & Versioning (Trophées : online & versioning_basics)
+- **Versioning :** Projet versionné via **Git**, avec des commits structurés illustrant l'évolution du design et des fonctionnalités.
+- **En ligne :** Le portfolio est déployé en continu et accessible publiquement via Netlify.
+
+👉 **[Visiter le Portfolio F1 Telemetry](https://portfolio-f1-loisclerc.netlify.app)**
