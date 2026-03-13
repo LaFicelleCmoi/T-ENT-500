@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loïs Clerc | Telemetry Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="start-screen">
+        <div class="lights">
+            <div class="light-pod"><div class="l-bulb"></div><div class="l-bulb"></div></div>
+            <div class="light-pod"><div class="l-bulb"></div><div class="l-bulb"></div></div>
+            <div class="light-pod"><div class="l-bulb"></div><div class="l-bulb"></div></div>
+            <div class="light-pod"><div class="l-bulb"></div><div class="l-bulb"></div></div>
+            <div class="light-pod"><div class="l-bulb"></div><div class="l-bulb"></div></div>
+        </div>
+        <h2 class="loading-text">FORMATION LAP</h2>
+    </div>
+
+    <aside>
+        <div class="pos-box active" onclick="scrollToSection('profile')">PIL</div>
+        <div class="pos-box" onclick="scrollToSection('skills')">TEC</div>
+        <div class="pos-box" onclick="scrollToSection('history')">EXP</div>
+        <div class="pos-box" onclick="scrollToSection('projects')">PRJ</div>
+        <div class="pos-box" onclick="scrollToSection('contact')">BOX</div>
+    </aside>
+
+    <main>
+        <header id="profile">
+            <div class="driver-info">
+                <div class="team-tag">// SCUDERIA EPITECH</div>
+                <h1>LOÏS CLERC</h1>
+                <h2>ÉTUDIANT IT & CYBER | ACTUELLEMENT EN ALTERNANCE CHEZ EZDrive</h2>
+            </div>
+            <div class="driver-num">27</div>
+        </header>
+
+        <div class="grid-container">
+
+            <div class="card">
+                <div class="card-header">
+                    <span>DRIVER PROFILE</span>
+                    <span>STATUS: OPEN TO WORK</span>
+                </div>
+                <img src="assets/Photo.png" alt="Loïs Clerc" class="driver-photo" onerror="this.src='https://via.placeholder.com/400x200/222/fff?text=DRIVER+PHOTO'">
+                <p class="bio">
+                    Étudiant passionné par le <strong>Dév Web, la Cybersécurité et l'Électronique</strong>. 
+                    Actuellement en recherche de siège (alternance) pour 33 mois.
+                    <br><br>
+                    <span class="quote">"Je ne conduis pas pour être deuxième."</span>
+                </p>
+            </div>
+
+            <div class="card" id="skills">
+                <div class="card-header">
+                    <span>TECHNICAL TELEMETRY</span>
+                    <span>COMPOUNDS</span>
+                </div>
+                <div class="tyre-row">
+                    <div class="tyre soft">S</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-name"><span>HTML / CSS</span> <span class="pace-tag">QUALIF PACE</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 95%; background: var(--soft-red);"></div></div>
+                    </div>
+                </div>
+                <div class="tyre-row">
+                    <div class="tyre medium">M</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-name"><span>PYTHON / C++</span> <span class="pace-tag" style="color:var(--med-yellow)">RACE PACE</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 85%; background: var(--med-yellow);"></div></div>
+                    </div>
+                </div>
+                <div class="tyre-row">
+                    <div class="tyre hard">H</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-name"><span>RÉSEAUX / CISCO</span> <span class="pace-tag" style="color:var(--hard-white)">LONG STINT</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 75%; background: var(--hard-white);"></div></div>
+                    </div>
+                </div>
+                <div class="tyre-row">
+                    <div class="tyre inter">I</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-name"><span>ÉLECTRONIQUE / IOT</span> <span class="pace-tag" style="color:var(--inter-green)">WET COND.</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 70%; background: var(--inter-green);"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header"><span>OFF-TRACK INTERESTS</span><span>SETUP DATA</span></div>
+                <div class="passion-group">
+                    <h4>FORMULA 1</h4>
+                    <div class="passion-tag ferrari">CHARLES LECLERC</div>
+                    <div class="passion-tag ferrari">FORZA FERRARI</div>
+                </div>
+                <div class="passion-group">
+                    <h4>GAMING & MANGA</h4>
+                    <div class="passion-tag">ONE PIECE</div><div class="passion-tag">SOLO LEVELING</div>
+                    <div class="passion-tag">DETROIT: BECOME HUMAN</div>
+                    <div class="passion-tag">CYBERPUNK 2077</div>
+                    <div class="passion-tag">RED DEAD REDEMPTION 2</div>
+                    <div class="passion-tag">CRUSADER KINGS 3 </div>
+                </div>
+            </div>
+
+<div class="card" id="history" style="grid-column: span 2;">
+    <div class="card-header">
+        <span>CAREER TELEMETRY</span>
+        <span>LAP BY LAP ANALYSIS <i class="fas fa-arrows-alt-v"></i></span>
+    </div>
+    
+    <div class="exp-scroll-window">
+
+        <div class="exp-item">
+            <div class="exp-marker">
+                <span class="lap-num">24</span>
+                <div class="sector-line purple"></div>
+            </div>
+            <div class="exp-details">
+                <h5>SNCF <span class="delta">S1: NEW BEST</span></h5>
+                <p class="role">Stage Administrateur Réseaux et Systèmes (Mai/Juin)</p>
+                <ul>
+                    <li>Installation et configuration de SWITCH (MobaXterm)</li>
+                    <li>Programmes vidéosurveillance et affichage des trains</li>
+                    <li>Configuration de poste de contrôle et Modem WiFi</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-marker">
+                <span class="lap-num">23</span>
+                <div class="sector-line green"></div>
+            </div>
+            <div class="exp-details">
+                <h5>AIPS <span class="delta">S2: IMPROVING</span></h5>
+                <p class="role">Stage Installateur d'alarmes (Mai)</p>
+                <ul>
+                    <li>Installation/Maintenance alarmes incendies et sonores</li>
+                    <li>Installation et maintenance de SWITCH</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-marker">
+                <span class="lap-num">22</span>
+                <div class="sector-line green"></div>
+            </div>
+            <div class="exp-details">
+                <h5>Direct Sécurité</h5>
+                <p class="role">Stage Réparateur et Installateur Vidéo (Octobre)</p>
+                <ul>
+                    <li>Réparation et installation de caméras</li>
+                    <li>Vente en ligne et modification du site internet</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-marker">
+                <span class="lap-num">22</span>
+                <div class="sector-line green"></div>
+            </div>
+            <div class="exp-details">
+                <h5>Point Express Mobile</h5>
+                <p class="role">Stage Réparateur et Vendeur Téléphonie (Mai)</p>
+                <ul>
+                    <li>Réparation smartphones, iPhones, tablettes</li>
+                    <li>Gestion des stocks et commandes de pièces</li>
+                </ul>
+            </div>
+        </div>
+
+       
+        <div class="exp-item">
+            <div class="exp-marker">
+                <span class="lap-num">21</span>
+                <div class="sector-line"></div>
+            </div>
+            <div class="exp-details">
+                <h5>Maison Electro Services</h5>
+                <p class="role">Stage Réparateur Électroménager (Novembre)</p>
+                <ul>
+                    <li>Maintenance, installation TV et Box Internet</li>
+                    <li>Conseil client et gestion de la caisse</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="exp-item">
+            <div class="exp-marker">
+                <span class="lap-num">21</span>
+                <div class="sector-line"></div>
+            </div>
+            <div class="exp-details">
+                <h5>Connectic</h5>
+                <p class="role">Stage Vendeur et Réparateur Électronique (Juin)</p>
+                <ul>
+                    <li>Soudure industrielle sur circuits intégrés</li>
+                    <li>Maintenance matériel électronique et vente en ligne</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="exp-item">
+            <div class="exp-marker">
+                <span class="lap-num">21</span>
+                <div class="sector-line pit"></div>
+            </div>
+            <div class="exp-details">
+                <h5>Société Aubagnaise d'Électricité</h5>
+                <p class="role">Aide Électricien (Janvier)</p>
+                <ul>
+                    <li>Découverte du métier et manipulation d'outils</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+            <div class="card" id="formation">
+                <div class="card-header">
+                    <span>DRIVER ACADEMY</span>
+                    <span>ACADEMIC BACKGROUND</span>
+                </div>
+                <div class="academy-scroll-window">
+                    
+                    <div class="academy-item">
+                        <div class="year-badge">25/28</div>
+                        <div class="academy-info">
+                            <h4>Master Management SI</h4>
+                            <p class="school">EPITECH Marseille</p>
+                        </div>
+                    </div>
+
+                    <div class="academy-item">
+                        <div class="year-badge">23/25</div>
+                        <div class="academy-info">
+                            <h4>BTS CIEL</h4>
+                            <p class="school">Cybersécurité, Informatique, Électronique, Logiciels</p>
+                        </div>
+                    </div>
+
+                    <div class="academy-item">
+                        <div class="year-badge">20/23</div>
+                        <div class="academy-info">
+                            <h4>Bac Pro SN RISC</h4>
+                            <p class="school">Systèmes Numériques (Mention AB)</p>
+                        </div>
+                    </div>
+
+                    <div class="academy-item">
+                        <div class="year-badge">2020</div>
+                        <div class="academy-info">
+                            <h4>Brevet des Collèges</h4>
+                            <p class="school">Mention Bien</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card" id="projects" style="grid-column: span 2;">
+                <div class="card-header">
+                    <span>PROJECT TELEMETRY</span>
+                    <span>SCROLL FOR DATA <i class="fas fa-arrows-alt-v"></i></span>
+                </div>
+                <div class="projects-scroll-window">
+                    <div class="project-row">
+                        <div class="p-info">
+                            <h4><a href="https://github.com/LaFicelleCmoi/Pendu" target="_blank">PENDU</a></h4>
+                            <p>Algorithme Python & structures de contrôle.</p>
+                        </div>
+                        <span class="tech-tag">PY</span>
+                    </div>
+                    <div class="project-row">
+                        <div class="p-info">
+                            <h4><a href="https://github.com/LaFicelleCmoi/Arrosage" target="_blank">ARROSAGE AUTO</a></h4>
+                            <p>IoT : Capteurs d'humidité & Raspberry Pi.</p>
+                        </div>
+                        <span class="tech-tag">IOT</span>
+                    </div>
+                    <div class="project-row">
+                        <div class="p-info">
+                            <h4><a href="https://github.com/LaFicelleCmoi/CV-Num-rique-Portfolio" target="_blank">PORTFOLIO</a></h4>
+                            <p>CV numérique interactif & animations CSS.</p>
+                        </div>
+                        <span class="tech-tag">WEB</span>
+                    </div>
+                    <div class="project-row">
+                        <div class="p-info">
+                            <h4><a href="https://github.com/LaFicelleCmoi/Site-Web" target="_blank">SITE WEB ANNONCES</a></h4>
+                            <p>Plateforme d'annonces interactive (JS).</p>
+                        </div>
+                        <span class="tech-tag">WEB</span>
+                    </div>
+                    <div class="project-row">
+                        <div class="p-info">
+                            <h4><a href="https://github.com/LaFicelleCmoi/Jeu-2D" target="_blank">JEU 2D</a></h4>
+                            <p>Développement Java avec bibliothèque LibGDX.</p>
+                        </div>
+                        <span class="tech-tag">JAVA</span>
+                    </div>
+                    <div class="project-row">
+                        <div class="p-info">
+                            <h4><a href="https://github.com/LaFicelleCmoi/Jenkins" target="_blank">JENKINS</a></h4>
+                            <p>Configuration CI/CD & Automatisation de builds.</p>
+                        </div>
+                        <span class="tech-tag">OPS</span>
+                    </div>
+                    <div class="project-row">
+                        <div class="p-info">
+                            <h4><a href="https://github.com/LaFicelleCmoi/Smart-Fridge" target="_blank">SMART FRIDGE</a></h4>
+                            <p>Réfrigérateur intelligent & monitoring IoT.</p>
+                        </div>
+                        <span class="tech-tag">IOT</span>
+                    </div>
+                    <div class="project-row">
+                        <div class="p-info">
+                            <h4><a href="https://github.com/LaFicelleCmoi/RTC-Projet" target="_blank">RTC PROJET</a></h4>
+                            <p>Projet de réseau client-serveur en NextJS.</p>
+                        </div>
+                        <span class="tech-tag">Full Stack</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card" style="grid-column: span 3;" id="contact">
+                <div class="card-header"><span>PIT WALL COMMUNICATION</span><span>RADIO CHANNELS</span></div>
+                <div class="contact-flex">
+                    <div class="radio-msg">
+                        <p>"Box, box, Loïs. We are ready for the interview."</p>
+                        <span class="confirm">CONFIRM MEETING DATE</span>
+                    </div>
+                    <div class="radio-grid">
+                        <a href="mailto:lois.clerc@epitech.eu" class="radio-btn"><i class="fas fa-envelope"></i> EMAIL</a>
+                        <a href="tel:+33768575105" class="radio-btn"><i class="fas fa-phone"></i> TÉLÉPHONE</a>
+                        <a href="https://www.linkedin.com/in/lo%C3%AFs-clerc-a46583386/" target="_blank" class="radio-btn linkedin"><i class="fab fa-linkedin"></i> LINKEDIN</a>
+                        <a href="https://github.com/LaFicelleCmoi" target="_blank" class="radio-btn github"><i class="fab fa-github"></i> GITHUB</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer-telemetry">LOÏS CLERC © 2025 | TELEMETRY DATA V1.1</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
