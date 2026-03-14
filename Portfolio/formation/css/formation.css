@@ -1,62 +1,152 @@
-body {
-  background-color: #0a0a0a;
-  background-image: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #000000 100%);
-  color: #dcdcdc;
-  font-family: 'Georgia', 'Times New Roman', serif;
-  margin: 0;
-  padding: 0 1rem;
-  line-height: 1.6;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,900&family=Share+Tech+Mono&display=swap');
+
+
+:root {
+    --ferrari-red: #ff2800;
+    --soft-red: #ef3340;
+    --med-yellow: #ffdb00;
+    --hard-white: #f0f0f0;
+    --inter-green: #00d2be;
+    --carbon: #15151e;
+    --dark-bg: #0b0b0f;
 }
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: var(--dark-bg);
+    background-image: linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.92)), url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.font_formation { 
+    display: none; 
+}
+
 
 .formation-content {
-  background-color: #141414;
-  border: 1px solid #333;
-  border-left: 4px solid #8b0000;
-  padding: 2rem;
-  border-radius: 4px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.8);
-  max-width: 800px;
-  margin: 40px auto;
+    background: rgba(30, 30, 35, 0.7);
+    border: 1px solid #444;
+    border-top: 4px solid var(--ferrari-red); /* Accent F1 en haut de la carte */
+    padding: 40px;
+    border-radius: 4px;
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    width: 100%;
+    transition: 0.3s;
 }
 
+.formation-content:hover { 
+    border-color: var(--ferrari-red); 
+}
+
+
 h1 {
-  font-size: 2.2em;
-  color: #d4af37;
-  text-transform: uppercase;
-  font-family: 'Cinzel', 'Palatino Linotype', serif;
-  border-bottom: 1px solid #8b0000;
-  padding-bottom: 10px;
-  text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--hard-white);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--ferrari-red);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 h2 {
-  font-size: 1.5em;
-  color: #d4af37;
-  font-family: 'Cinzel', 'Palatino Linotype', serif;
-  margin-top: 30px;
+    font-size: 1.4rem;
+    color: var(--ferrari-red);
+    font-family: 'Share Tech Mono', monospace;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
-p, li { color: #ccc; }
-strong { color: #d4af37; }
+p { 
+    color: #ccc; 
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+strong { 
+    color: var(--med-yellow); /* Mise en évidence façon pneus Medium */
+    font-family: 'Share Tech Mono', monospace;
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+ul li {
+    color: #ccc;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--ferrari-red);
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+}
+
 
 .formation-link {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px 20px;
-  background-color: transparent;
-  color: #d4af37;
-  text-decoration: none;
-  border: 1px solid #8b0000;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: 'Cinzel', 'Palatino Linotype', serif;
-  transition: all 0.3s ease;
+    display: block;
+    margin-top: 40px;
+    padding: 12px 20px;
+    background-color: rgba(255,255,255,0.05);
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--ferrari-red);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.formation-link i {
+    color: var(--ferrari-red);
+    margin-right: 8px;
+    transition: 0.3s;
 }
 
 .formation-link:hover {
-  background-color: #8b0000;
-  color: white;
-  box-shadow: 0 0 10px #8b0000;
+    background-color: var(--ferrari-red);
+    color: white;
 }
 
-.font_formation { display: none; }
+.formation-link:hover i {
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .formation-content {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.2rem; }
+    p { font-size: 1rem; }
+}

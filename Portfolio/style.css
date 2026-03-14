@@ -212,7 +212,7 @@ header h1 { font-weight: 900; font-style: italic; font-size: 3.5rem; text-transf
     padding-bottom: 50px;
 }
 
-/* Tablette (iPad, petits écrans) */
+
 @media (max-width: 1100px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr); 
@@ -223,7 +223,7 @@ header h1 { font-weight: 900; font-style: italic; font-size: 3.5rem; text-transf
     }
 }
 
-/* Mobile (Téléphones) */
+
 @media (max-width: 768px) {
     body {
         flex-direction: column;
@@ -281,11 +281,13 @@ header h1 { font-weight: 900; font-style: italic; font-size: 3.5rem; text-transf
     }
 }
 
-/* --- DRIVER ACADEMY (FORMATIONS) --- */
+
 .academy-scroll-window {
     max-height: 380px;
     overflow-y: auto;
     padding-right: 10px;
+    display: flex;              
+    flex-direction: column;     
 }
 .academy-scroll-window::-webkit-scrollbar { width: 6px; }
 .academy-scroll-window::-webkit-scrollbar-thumb { background: var(--ferrari-red); border-radius: 3px; }
